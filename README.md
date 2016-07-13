@@ -35,7 +35,8 @@ Add this to your Podspec:
 pod POSHockeyAppExtension, :git => 'https://github.com/pavelosipov/POSHockeyAppExtension.git'
 ```
 
-Then run `pod install`.
+Then run `pod install`. Temporary pod points to repository directly because of
+[publishing issue](https://github.com/CocoaPods/CocoaPods/issues/5619).
 
 POSHockeyAppExtension pod should replace HockeyApp pod in Podfile, because it
 depends on HockeyApp-Sources pod. Another reason is the usage of the HockeyApp
