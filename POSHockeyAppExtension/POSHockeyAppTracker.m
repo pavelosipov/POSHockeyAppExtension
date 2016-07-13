@@ -26,6 +26,8 @@
 # import <HockeySDK-Source/BITCrashReportTextFormatter.h>
 #endif
 
+#import <CrashReporter/CrashReporter.h>
+
 #include <sys/types.h>
 #include <sys/sysctl.h>
 
