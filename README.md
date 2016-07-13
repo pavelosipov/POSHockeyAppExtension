@@ -1,6 +1,5 @@
 POSHockeyAppExtension
 =====================
-[![Version](http://img.shields.io/cocoapods/v/POSHockeyAppExtension.svg)](http://cocoapods.org/?q=POSHockeyAppExtension)
 
 POSHockeyAppExtension is a plugin to HockeyApp SDK which makes it possible to send
 regular application events to HockeyApp service. Those events have the same format
