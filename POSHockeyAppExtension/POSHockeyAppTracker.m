@@ -143,7 +143,7 @@ NS_ASSUME_NONNULL_BEGIN
         crashUUID = (NSString *)CFBridgingRelease(CFUUIDCreateString(NULL, report.uuidRef));
     }
     NSString *installID = bit_appAnonID(NO) ?: @"";
-    NSString *crashReport = [BITCrashReportTextFormatter stringValueForCrashReport:report
+    NSString *crashReport = [BITCrashReportTextFormatter stringValueForCrashReport:(id)report
                                                                   crashReporterKey:installID];
     BITCrashManager *crashManager = BITHockeyManager.sharedHockeyManager.crashManager;
     NSString *userName = crashManager.userNameForCrashReport;
@@ -202,7 +202,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSString *)_extractAppUUIDs:(BITPLCrashReport *)report {
     NSMutableString *uuidString = [NSMutableString string];
-    NSArray *uuidArray = [BITCrashReportTextFormatter arrayOfAppUUIDsForCrashReport:report];
+    NSArray *uuidArray = [BITCrashReportTextFormatter arrayOfAppUUIDsForCrashReport:(id)report];
     for (NSDictionary *element in uuidArray) {
         if ([element objectForKey:kBITBinaryImageKeyUUID] &&
             [element objectForKey:kBITBinaryImageKeyArch] &&
