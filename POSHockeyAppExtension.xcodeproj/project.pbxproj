@@ -25,6 +25,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		21F4401B1D363EF700C736D8 /* POSTrackableAssert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POSTrackableAssert.h; sourceTree = "<group>"; };
 		E9A654E91D2AF320005CC7FA /* libPOSHockeyAppExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPOSHockeyAppExtension.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A654EC1D2AF320005CC7FA /* POSHockeyAppExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POSHockeyAppExtension.h; sourceTree = "<group>"; };
 		E9A654F51D2AF38B005CC7FA /* POSHockeyAppTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POSHockeyAppTracker.h; sourceTree = "<group>"; };
@@ -64,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				E9A654EC1D2AF320005CC7FA /* POSHockeyAppExtension.h */,
+				21F4401B1D363EF700C736D8 /* POSTrackableAssert.h */,
 				E9A654F51D2AF38B005CC7FA /* POSHockeyAppTracker.h */,
 				E9A654F61D2AF38B005CC7FA /* POSHockeyAppTracker.m */,
 			);
@@ -85,11 +87,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9A654F21D2AF320005CC7FA /* Build configuration list for PBXNativeTarget "POSHockeyAppExtension" */;
 			buildPhases = (
-				F0DF2B2F259EC30E97CC55A0 /* [CP] Check Pods Manifest.lock */,
 				E9A654E51D2AF320005CC7FA /* Sources */,
 				E9A654E61D2AF320005CC7FA /* Frameworks */,
 				E9A654E71D2AF320005CC7FA /* CopyFiles */,
-				FDC63A4E96D85062E67C1C28 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,39 +130,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		F0DF2B2F259EC30E97CC55A0 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		FDC63A4E96D85062E67C1C28 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-POSHockeyAppExtension/Pods-POSHockeyAppExtension-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E9A654E51D2AF320005CC7FA /* Sources */ = {

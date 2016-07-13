@@ -6,7 +6,7 @@
 //  Copyright © 2016 Pavel Osipov. All rights reserved.
 //
 
-#import <CrashReporter/CrashReporter.h>
+#import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -126,24 +126,5 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)init NS_UNAVAILABLE;
 
 @end
-
-#pragma mark -
-
-/// Sends report with specified description to HockeyApp service if condition is false.
-#define POS_TRACKABLE_ASSERT_EX(tracker, condition, description, ...) \
-do { \
-    NSAssert((condition), description, ##__VA_ARGS__); \
-    if (!(condition)) { \
-        NSData *report = [[BITPLCrashReporter sharedReporter] generateLiveReportAndReturnError:nil]; \
-        if (report) { \
-            [tracker fireAssertReport:report withPayload:description, ##__VA_ARGS__]; \
-        } \
-    } \
-} while (0)
-
-/// Sends report to HockeyApp service if condition is false.
-#define POS_TRACKABLE_ASSERT(tracker, condition) \
-        POS_TRACKABLE_ASSERT_EX(tracker, condition, ([NSString stringWithFormat:@"'%s' is false.", #condition]))
-
 
 NS_ASSUME_NONNULL_END
