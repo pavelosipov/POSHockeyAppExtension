@@ -8,9 +8,23 @@
 
 #import "POSHockeyAppTracker.h"
 
-#import <HockeySDK-Source/HockeySDK.h>
-#import <HockeySDK-Source/BITHockeyHelper.h>
-#import <HockeySDK-Source/BITCrashReportTextFormatter.h>
+#if __has_include(<HockeySDK_Source/HockeySDK.h>)
+# import <HockeySDK_Source/HockeySDK.h>
+#else
+# import <HockeySDK-Source/HockeySDK.h>
+#endif
+
+#if __has_include(<HockeySDK_Source/BITHockeyHelper.h>)
+# import <HockeySDK_Source/BITHockeyHelper.h>
+#else
+# import <HockeySDK-Source/BITHockeyHelper.h>
+#endif
+
+#if __has_include(<HockeySDK_Source/BITCrashReportTextFormatter.h>)
+# import <HockeySDK_Source/BITCrashReportTextFormatter.h>
+#else
+# import <HockeySDK-Source/BITCrashReportTextFormatter.h>
+#endif
 
 #include <sys/types.h>
 #include <sys/sysctl.h>
