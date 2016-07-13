@@ -7,4 +7,3 @@
 //
 
 #import <POSHockeyAppExtension/POSHockeyAppTracker.h>
-#import <POSHockeyAppExtension/POSTrackableAssert.h>
