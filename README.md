@@ -1,5 +1,6 @@
 POSHockeyAppExtension
 =====================
+[![Version](http://img.shields.io/cocoapods/v/POSHockeyAppExtension.svg)](http://cocoapods.org/?q=POSHockeyAppExtension)
 
 POSHockeyAppExtension is a plugin to HockeyApp SDK which makes it possible to send
 regular application events to HockeyApp service. Those events have the same format
@@ -32,11 +33,10 @@ looks like.
 Add this to your Podspec:
 
 ```ruby
-pod POSHockeyAppExtension, :git => 'https://github.com/pavelosipov/POSHockeyAppExtension.git'
+pod POSHockeyAppExtension
 ```
 
-Then run `pod install`. Temporary pod points to repository directly because of
-[publishing issue](https://github.com/CocoaPods/CocoaPods/issues/5619).
+Then run `pod install`.
 
 POSHockeyAppExtension pod should replace HockeyApp pod in Podfile, because it
 depends on HockeyApp-Sources pod. Another reason is the usage of the HockeyApp
