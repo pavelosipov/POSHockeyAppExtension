@@ -44,8 +44,8 @@ SDK private API for sending crash reports. That is why POSHockeyAppExtension may
 be locked to some specific version of HockeyApp SDK until migration to a new
 version.
 
-HockeyApp public API contains REST method for sending custom crash logs and it
-is not a problem to implement that functionality inside POSHockeyAppExtension.
+HockeyApp public API contains REST method for [sending custom crash logs](https://support.hockeyapp.net/kb/api/api-crashes)
+and it is not a problem to implement that functionality inside POSHockeyAppExtension.
 There are several reasons why POSHockeyAppExtension uses HockeyApp SDK private
 API instead:
 
