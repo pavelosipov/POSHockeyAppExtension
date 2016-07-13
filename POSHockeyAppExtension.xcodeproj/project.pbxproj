@@ -25,7 +25,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		21F4401B1D363EF700C736D8 /* POSTrackableAssert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POSTrackableAssert.h; sourceTree = "<group>"; };
 		E9A654E91D2AF320005CC7FA /* libPOSHockeyAppExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPOSHockeyAppExtension.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A654EC1D2AF320005CC7FA /* POSHockeyAppExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POSHockeyAppExtension.h; sourceTree = "<group>"; };
 		E9A654F51D2AF38B005CC7FA /* POSHockeyAppTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POSHockeyAppTracker.h; sourceTree = "<group>"; };
@@ -65,7 +64,6 @@
 			isa = PBXGroup;
 			children = (
 				E9A654EC1D2AF320005CC7FA /* POSHockeyAppExtension.h */,
-				21F4401B1D363EF700C736D8 /* POSTrackableAssert.h */,
 				E9A654F51D2AF38B005CC7FA /* POSHockeyAppTracker.h */,
 				E9A654F61D2AF38B005CC7FA /* POSHockeyAppTracker.m */,
 			);

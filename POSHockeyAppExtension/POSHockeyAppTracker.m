@@ -26,8 +26,6 @@
 # import <HockeySDK-Source/BITCrashReportTextFormatter.h>
 #endif
 
-#import <CrashReporter/CrashReporter.h>
-
 #include <sys/types.h>
 #include <sys/sysctl.h>
 
@@ -81,7 +79,6 @@ NS_ASSUME_NONNULL_BEGIN
     [directoryEnumerator skipDescendents];
     NSString *crashLogFilename;
     while (crashLogFilename = [directoryEnumerator nextObject]) {
-        NSError *error = nil;
         NSString *crashLogPath = [_backupDirectoryPath stringByAppendingPathComponent:crashLogFilename];
         NSString *crashLog = [NSString stringWithContentsOfFile:crashLogPath encoding:NSUTF8StringEncoding error:nil];
         if (!crashLog) {
